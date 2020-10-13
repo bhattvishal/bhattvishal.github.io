@@ -42,10 +42,13 @@ const Achievements = () => {
   };
 
   return (
-    <div id="achievements" className="jumbotron jumbotron-fluid m-0">
+    <div
+      id="achievements"
+      className="jumbotron jumbotron-fluid bg-transparent m-0"
+    >
       <div className="container container-fluid p-5">
         <div className="row">
-          <h1>Achievements</h1>
+          <h1 className="display-4 pb-5">Achievements</h1>
         </div>
       </div>
     </div>

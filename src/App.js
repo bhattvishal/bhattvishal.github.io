@@ -23,8 +23,8 @@ const Home = () => {
     <Fragment>
       <MainBody />
       <AboutMe />
-      <Achievements />
       <Experience />
+      <Achievements />
       <Education />
       <Project />
     </Fragment>

@@ -45,7 +45,7 @@ const Experience = () => {
     <div id="experience" className="jumbotron jumbotron-fluid m-0">
       <div className="container container-fluid p-5">
         <div className="row">
-          <h1>Experience</h1>
+          <h1 className="display-4 pb-5">Experience</h1>
         </div>
       </div>
     </div>
