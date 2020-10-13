@@ -1,0 +1,54 @@
+{
+  "backgroundType": "gradient",
+  "plainBackgroundMode": "daylight",
+  "gradientColors": "#EE7752, #E73C7E, #23A6D5, #23D5AB",
+  "FirstName": "Vishal",
+  "MiddleName": "",
+  "LastName": "Bhatt",
+  "devDesc": "| Innovator | Engineer | Photographer | Chef | Father ",
+  "icons": [
+    {
+      "id": 0,
+      "image": "fa-github",
+      "url": "https://github.com/bhattvishal",
+      "style": "socialicons"
+    },
+    {
+      "id": 1,
+      "image": "fa-github",
+      "url": "https://www.facebook.com/bhattvishal",
+      "style": "socialicons"
+    },
+    {
+      "id": 2,
+      "image": "fa-instagram",
+      "url": "https://www.instagram.com/bhattvishal/",
+      "style": "socialicons"
+    },
+    {
+      "id": 3,
+      "image": "fa-linkedin",
+      "url": "https://www.linkedin.com/in/bhattvishal/",
+      "style": "socialicons"
+    },
+    {
+      "id": 4,
+      "image": "fa-twitter",
+      "url": "https://www.twitter.com/bhattvishal/",
+      "style": "socialicons"
+    }
+  ],
+  "aboutHeading": "About Me",
+  "showInstaProfilePic": true,
+  "instaLink": "https://www.instagram.com/",
+  "instaUsername": "bhattvishal",
+  "instaQuerry": "/?__a=1",
+  "aboutDescription": "I'm a Software Specialist from, India with 12+ years of rich experience in Windows, IoT and Cloud development. I’m currently working as Specialist Engineer at Eaton India Innovation Center. I'm passionate about technology, teaching machines how to think and help organizations in their Digital Transformation journey.",
+  "projectHeading": "Recent Projects",
+  "gitHubLink": "https://api.github.com/users/",
+  "gitHubUsername": "bhattvishal",
+  "gitHubQuerry": "/repos?sort=updated&direction=desc",
+  "projectsLength": 4,
+  "showNavigationbar": true,
+  "showBlog": false
+}
