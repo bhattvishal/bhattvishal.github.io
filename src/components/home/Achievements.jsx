@@ -47,8 +47,14 @@ const Achievements = () => {
       className="jumbotron jumbotron-fluid bg-transparent m-0"
     >
       <div className="container container-fluid p-5">
+        <i class="fa fa-flag fa-5x" aria-hidden="true"></i>
+        <h1 className="display-4 pb-5">Achievements</h1>
         <div className="row">
-          <h1 className="display-4 pb-5">Achievements</h1>
+          <div className="row">
+            <div class="col-sm-6">
+              <div class="card"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

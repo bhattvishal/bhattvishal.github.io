@@ -44,9 +44,9 @@ const Experience = () => {
   return (
     <div id="experience" className="jumbotron jumbotron-fluid m-0">
       <div className="container container-fluid p-5">
-        <div className="row">
-          <h1 className="display-4 pb-5">Experience</h1>
-        </div>
+        <i class="fa fa-space-shuttle fa-5x" aria-hidden="true"></i>
+        <h1 className="display-4 pb-5">Experience</h1>
+        <div className="row"></div>
       </div>
     </div>
   );

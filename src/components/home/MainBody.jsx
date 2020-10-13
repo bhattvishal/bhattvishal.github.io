@@ -32,12 +32,15 @@ const MainBody = () => {
         id="home"
         className="title jumbotron jumbotron-fluid bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
-        <div id="stars"></div>
+        {/* <div id="stars"></div> */}
         <div className="container container-fluid text-center ">
-          <h1 className="display-1">
-            {FirstName + " " + MiddleName + " " + LastName}
+          <h1 class="display-1">
+            <strong>{FirstName + " " + MiddleName + " " + LastName}</strong>
           </h1>
-          <Typist className="lead"> {devDesc}</Typist>
+          <Typist className="lead">
+            {" "}
+            <strong>{devDesc}</strong>
+          </Typist>
           <div className="p-5">
             {icons.map((icon) => (
               <a
@@ -61,7 +64,7 @@ const MainBody = () => {
             role="button"
             aria-label="Learn more about me"
           >
-            More about me
+            More About Me
           </a>
         </div>
       </div>

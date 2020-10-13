@@ -60,7 +60,15 @@ const Navbar = (props) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#experience"}
             >
-              Experience
+              <b>Experience</b>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="nav-link lead"
+              href={process.env.PUBLIC_URL + "/#skills"}
+            >
+              <b>Skills</b>
             </a>
           </li>
           <li className="nav-item">
@@ -68,7 +76,7 @@ const Navbar = (props) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#achievements"}
             >
-              Achievements
+              <b>Achievements</b>
             </a>
           </li>
           <li className="nav-item">
@@ -76,7 +84,7 @@ const Navbar = (props) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#education"}
             >
-              Education
+              <b>Education</b>
             </a>
           </li>
           <li className="nav-item">
@@ -84,7 +92,7 @@ const Navbar = (props) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#projects"}
             >
-              Projects
+              <b>Projects</b>
             </a>
           </li>
           <li className="nav-item">

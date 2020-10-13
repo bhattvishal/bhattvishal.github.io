@@ -37,6 +37,7 @@ const Project = () => {
     <div id="projects" className="jumbotron jumbotron-fluid bg-transparent m-0">
       {projectsArray.length && (
         <div className="container container-fluid p-5">
+          <i class="fa fa-code fa-5x" aria-hidden="true"></i>
           <h1 className="display-4 pb-5">{projectHeading}</h1>
           <div className="row">
             {projectsArray.map((project) => (

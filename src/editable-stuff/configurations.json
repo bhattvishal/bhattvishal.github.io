@@ -9,30 +9,36 @@
   "icons": [
     {
       "id": 0,
-      "image": "fa-github",
-      "url": "https://github.com/bhattvishal",
-      "style": "socialicons"
-    },
-    {
-      "id": 1,
-      "image": "fa-github",
-      "url": "https://www.facebook.com/bhattvishal",
-      "style": "socialicons"
-    },
-    {
-      "id": 2,
-      "image": "fa-instagram",
-      "url": "https://www.instagram.com/bhattvishal/",
-      "style": "socialicons"
-    },
-    {
-      "id": 3,
       "image": "fa-linkedin",
       "url": "https://www.linkedin.com/in/bhattvishal/",
       "style": "socialicons"
     },
     {
+      "id": 1,
+      "image": "fa-github",
+      "url": "https://github.com/bhattvishal",
+      "style": "socialicons"
+    },
+    {
+      "id": 2,
+      "image": "fa-stack-overflow",
+      "url": "https://stackoverflow.com/users/2516018/vishal-bhatt?tab=profile",
+      "style": "socialicons"
+    },
+    {
+      "id": 3,
+      "image": "fa-medium",
+      "url": " https://medium.com/@bhattvishal",
+      "style": "socialicons"
+    },
+    {
       "id": 4,
+      "image": "fa-instagram",
+      "url": "https://www.instagram.com/bhattvishal/",
+      "style": "socialicons"
+    },
+    {
+      "id": 5,
       "image": "fa-twitter",
       "url": "https://www.twitter.com/bhattvishal/",
       "style": "socialicons"
