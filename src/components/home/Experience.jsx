@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Pdf from "../../editable-stuff/resume.pdf";
+import CompanyLogo from "../../images/company_logo.png";
 import {
   aboutHeading,
   aboutDescription,
@@ -9,6 +10,12 @@ import {
   instaUsername,
   instaQuerry,
 } from "../../editable-stuff/configurations.json";
+
+const divStyle = {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+};
 
 const Experience = () => {
   const [instaProfilePic, setInstaProfilePic] = useState("");
@@ -46,7 +53,80 @@ const Experience = () => {
       <div className="container container-fluid p-5">
         <i class="fa fa-space-shuttle fa-5x" aria-hidden="true"></i>
         <h1 className="display-4 pb-5">Experience</h1>
-        <div className="row"></div>
+        <div className="row">
+          <div className="col d-lg-inline align-self-center">
+            <div className="row">
+              <div className="col text-center">
+                <img
+                  // className="border border-secondary rounded-circle"
+                  src={CompanyLogo}
+                  alt="dell technologies logo"
+                  width="300"
+                  height="80"
+                />
+                <br />
+                <br />
+                <p className="lead text-center" style={{ fontSize: "22px" }}>
+                  Specialist Engineer
+                  <br />
+                  April 2019 - Present
+                </p>
+              </div>
+              <div className="col text-center">
+                <img
+                  // className="border border-secondary rounded-circle"
+                  src={CompanyLogo}
+                  alt="boeing logo"
+                  width="300"
+                  height="80"
+                />
+                <br />
+                <br />
+                <p className="lead text-center" style={{ fontSize: "22px" }}>
+                  Lead Engineer
+                  <br />
+                  Nov 2015 - Mar 2019
+                </p>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div className="row">
+              <div className="col text-center">
+                <img
+                  // className="border border-secondary rounded-circle"
+                  src={CompanyLogo}
+                  alt="dell technologies logo"
+                  width="300"
+                  height="80"
+                />
+                <br />
+                <br />
+                <p className="lead text-center" style={{ fontSize: "22px" }}>
+                  Senior Engineer
+                  <br />
+                  Nov 2011 - Oct 2015
+                </p>
+              </div>
+              <div className="col text-center">
+                <img
+                  // className="border border-secondary rounded-circle"
+                  src={CompanyLogo}
+                  alt="boeing logo"
+                  width="300"
+                  height="80"
+                />
+                <br />
+                <br />
+                <p className="lead text-center" style={{ fontSize: "22px" }}>
+                  Lead Engineer
+                  <br />
+                  July 2008 - Oct 2011
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

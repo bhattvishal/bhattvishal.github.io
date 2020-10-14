@@ -33,12 +33,18 @@
     },
     {
       "id": 4,
+      "image": "fa-slack",
+      "url": "https://www.hackster.io/bhattvishal",
+      "style": "socialicons"
+    },
+    {
+      "id": 5,
       "image": "fa-instagram",
       "url": "https://www.instagram.com/bhattvishal/",
       "style": "socialicons"
     },
     {
-      "id": 5,
+      "id": 6,
       "image": "fa-twitter",
       "url": "https://www.twitter.com/bhattvishal/",
       "style": "socialicons"
@@ -49,11 +55,11 @@
   "instaLink": "https://www.instagram.com/",
   "instaUsername": "bhattvishal",
   "instaQuerry": "/?__a=1",
-  "aboutDescription": "I'm a Software Specialist from, India with 12+ years of rich experience in Windows, IoT and Cloud development. I’m currently working as Specialist Engineer at Eaton India Innovation Center. I'm passionate about technology, teaching machines how to think and help organizations in their Digital Transformation journey.",
+  "aboutDescription": "I'm a Software Specialist from Pune India, with 12+ years of rich experience in Windows, IoT and Cloud development. I’m currently working as Specialist Engineer at Eaton India Innovation Center. I'm passionate about technology, teaching machines how to think and help organizations in their Digital Transformation journey.",
   "projectHeading": "Recent Projects",
   "gitHubLink": "https://api.github.com/users/",
   "gitHubUsername": "bhattvishal",
-  "gitHubQuerry": "/repos?sort=updated&direction=desc",
+  "gitHubQuerry": "/starred?sort=updated&direction=desc",
   "projectsLength": 4,
   "showNavigationbar": true,
   "showBlog": false

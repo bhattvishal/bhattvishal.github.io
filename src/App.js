@@ -9,6 +9,7 @@ import {
 } from "./editable-stuff/configurations.json";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
+import Skills from "./components/home/Skills";
 import Achievements from "./components/home/Achievements";
 import Education from "./components/home/Education";
 import Experience from "./components/home/Experience";
@@ -23,6 +24,7 @@ const Home = () => {
     <Fragment>
       <MainBody />
       <AboutMe />
+      <Skills />
       <Experience />
       <Achievements />
       <Education />

@@ -10,7 +10,7 @@ import {
   instaQuerry,
 } from "../../editable-stuff/configurations.json";
 
-const Education = () => {
+const Skills = () => {
   const [instaProfilePic, setInstaProfilePic] = useState("");
   const [showInsta, setShowInsta] = useState(showInstaProfilePic);
   const [resumeURL] = useState(Pdf);
@@ -42,36 +42,14 @@ const Education = () => {
   };
 
   return (
-    <div id="education" className="jumbotron jumbotron-fluid m-0">
+    <div id="skills" className="jumbotron jumbotron-fluid bg-transparent m-0">
       <div className="container container-fluid p-5">
-        <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
-        <h1 className="display-4 pb-5">Education</h1>
+        <i class="fa fa-flag fa-5x" aria-hidden="true"></i>
+        <h1 className="display-4 pb-5">Skills</h1>
         <div className="row">
-          <div class="col-sm-12">
-            <div class="card">
-              <h5 class="card-header">Master of Technology (M.Tech)</h5>
-              <div class="card-body">
-                <h5 class="card-title">2006-2008</h5>
-                <p class="card-text">
-                  Computer Science and Engineering, National Institute of
-                  Technology, Bhopal
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div className="row">
-          <div class="col-sm-12">
-            <div class="card">
-              <h5 class="card-header">Bachelor of Engineering (B.E.)</h5>
-              <div class="card-body">
-                <h5 class="card-title">2002-2006</h5>
-                <p class="card-text">
-                  Computer Science and Engineering, University of Technology,
-                  Bhopal
-                </p>
-              </div>
+          <div className="row">
+            <div class="col-sm-6">
+              <div class="card"></div>
             </div>
           </div>
         </div>
@@ -80,4 +58,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Skills;

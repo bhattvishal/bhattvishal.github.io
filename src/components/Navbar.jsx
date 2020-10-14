@@ -58,17 +58,17 @@ const Navbar = (props) => {
           <li className="nav-item">
             <a
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#experience"}
+              href={process.env.PUBLIC_URL + "/#skills"}
             >
-              <b>Experience</b>
+              <b>Skills</b>
             </a>
           </li>
           <li className="nav-item">
             <a
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
+              href={process.env.PUBLIC_URL + "/#experience"}
             >
-              <b>Skills</b>
+              <b>Experience</b>
             </a>
           </li>
           <li className="nav-item">
