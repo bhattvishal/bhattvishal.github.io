@@ -77,34 +77,14 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
 ## Setup And Deployment 🔧
 
-1. To Get Started, Fork this repository to your GitHub account:
-2. Clone the forked repo from your account using:
-
-   ```bash
-     git clone https://github.com/<your-username>/home.git
-   ```
-
-3. Open in editor and edit [src/editable-stuff/configurations.json](./src/editable-stuff/configurations.json) file.
-
-4. Add your resume as <resume.pdf> in place of [src/editable-stuff/resume.pdf](./src/editable-stuff/)
-
-5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
-6. Change URL in [package.json](./package.json) file:
-
-   ```json
-    "homepage": "https://<your-username>.github.io/home"
-   ```
-
-   Or for deployment at custom domain, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
-
-7. After editing run the following bash commands:
+1. After editing run the following bash commands:
 
    ```bash
    npm install
    npm start
    ```
 
-8. To deploy website, run:
+2. To deploy website, run:
 
    ```bash
     npm run build
@@ -113,7 +93,7 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
    Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
 
-9. Congrats your site is up and running. To see it live, visit:
+3. Congrats your site is up and running. To see it live, visit:
 
    ```https
      https://<your-username>.github.io/home
@@ -126,88 +106,6 @@ Facing issues? Feel free to contact at bhattvishal@gmail.com.
 ## Contributing 🙌
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## Issues
-
-If anyone is looking to make some contribution, the following are issues that you can solve:
-
-- [ ] UI improvements
-- [ ] Code optimization
-- [x] Routing
-- [ ] SEO
-
-## Upcoming Features / Improvements 🔗
-
-- [x] Button and place for resume/CV.
-- [x] Option: add or not to add Instagram's display picture.
-- [x] Number of projects to show in website.
-- [x] If the Number of Projects are zero, hide the heading (Recent Projects).
-- [ ] Blogs page.
-- [ ] Make resume optional.
-
-## Showcase 🚀
-
-Have you changed something in the code to create your own version? Feel free to share with me, I will list them in this space.
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/justiceserv/justiceserv.github.io">
-        <img src="READMEdocs/justiceserv-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Guhyun Chung</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/hamzasohail0/home/">
-        <img src="READMEdocs/hamzasohail0-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Hamza Sohail</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/AymunTariq/home/">
-        <img src="READMEdocs/aymuntariq-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Aymun Tariq</b></sub>
-      </a>
-      <br />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/anaashrafi/home/">
-        <img src="READMEdocs/anaashrafi-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Ana Ashrafi</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/jefferyjohn/home/">
-        <img src="READMEdocs/jefferyjohn-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Jeffery John</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/remimestdagh/home/">
-        <img src="READMEdocs/remimestdagh-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Remi Mestdagh</b></sub>
-      </a>
-      <br />
-    </td>
-  </tr>
-</table>
-
-## Versão em Português :brazil:
-
-Esse projeto foi traduzido para português! Se você gostou dele e quer criar a sua própria versão, confira o repositório do [@tashima42](https://github.com/tashima42) em [https://github.com/Tashima42/home](https://github.com/Tashima42/home).
-Novas contribuições e revisões na tradução são muito bem vindas!
 
 ## Stargazers over time
 
