@@ -89,6 +89,9 @@ a { color: inherit; }
 .btn:hover { transform: translateY(-2px); border-color: var(--accent); }
 .btn-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); box-shadow: var(--glow); }
 .btn-ghost { background: transparent; }
+.btn-lab { border-color: color-mix(in srgb, var(--violet) 60%, var(--line)); background: color-mix(in srgb, var(--violet) 14%, var(--surface)); }
+.nav .nav-lab { color: var(--accent); }
+.section-sub a { color: var(--accent); }
 kbd { font-family: var(--mono); font-size: 12px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: 0 6px; }
 
 .device { background: color-mix(in srgb, var(--surface) 82%, transparent); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; backdrop-filter: blur(8px); box-shadow: 0 30px 80px -30px rgba(0,0,0,.5); }

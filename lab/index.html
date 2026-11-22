@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Lab — Vishal Bhatt</title>
+  <meta name="description" content="Step into Vishal Bhatt's lab: an interactive 3D room where every object — monitors, 3D printer, electronics, books, plants, balcony — is one part of a system." />
+  <meta name="theme-color" content="#0a0e13" />
+  <meta property="og:title" content="The Lab — Vishal Bhatt" />
+  <meta property="og:description" content="An interactive 3D room where every object is one part of a system." />
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="lab.css" />
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }
+  </script>
+</head>
+<body class="day">
+  <div class="sky" aria-hidden="true"><div class="stars"></div></div>
+  <canvas id="c" aria-label="Interactive 3D model of Vishal's room. Use the station list to explore it without a mouse."></canvas>
+  <div id="pins" aria-hidden="true"></div>
+
+  <header class="hud">
+    <a class="back mono" href="../">← bhattvishal.github.io</a>
+    <div class="title">
+      <h1>The Lab</h1>
+      <p class="mono">10 × 10 ft · Pune · every object is part of the system</p>
+    </div>
+    <div class="controls">
+      <button class="ctl" id="btn-tour" aria-pressed="false"><span aria-hidden="true">▶</span> Tour</button>
+      <button class="ctl" id="btn-systems" aria-pressed="false"><span class="sw" aria-hidden="true"></span> Systems view</button>
+      <button class="ctl" id="btn-time" aria-label="Toggle day / night"><span id="time-ico" aria-hidden="true">☀</span> <span id="time-label">Day</span></button>
+      <button class="ctl" id="btn-reset">Overview</button>
+    </div>
+  </header>
+
+  <nav class="stations" id="stations" aria-label="Stations in the room"></nav>
+
+  <aside class="panel" id="panel" aria-live="polite" hidden>
+    <button class="panel-x" id="panel-x" aria-label="Close and return to overview">×</button>
+    <div id="panel-body"></div>
+    <div class="panel-nav">
+      <button class="ctl" id="prev">← Prev</button>
+      <button class="ctl" id="next">Next →</button>
+    </div>
+  </aside>
+
+  <p class="hint mono" id="hint">drag to orbit · scroll to zoom · click anything in the room</p>
+  <div class="loader mono" id="loader">booting the lab…</div>
+  <noscript><div class="fallback">The Lab needs JavaScript and WebGL. <a href="../">Back to the main site →</a></div></noscript>
+
+  <script src="../assets/data.js"></script>
+  <script type="module" src="lab.js"></script>
+</body>
+</html>
