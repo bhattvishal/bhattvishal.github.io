@@ -14,25 +14,44 @@ window.PROFILE = {
   name: "Vishal Bhatt",
   firstName: "Vishal",
   location: "Pune, India",
+  photo: "assets/vishal.jpg",
   careerStart: "2008-07-01", // drives the live "uptime" counter
 
-  // TODO(linkedin): replace with your current LinkedIn headline
-  headline: "Software Specialist · Digital Innovator · .NET · IoT · Cloud · DevOps",
-  rotating: ["Innovator", "Engineer", "Tech Enthusiast", "Photographer", "Nature Lover"],
+  // LinkedIn headline (Nov 2026)
+  tagline: "Building what builds.",
+  headline: "System Architect — Data Science & AI · Embedded, IoT & Cloud",
+  previousHeadline: "Software Specialist · Digital Innovator · .NET · IoT · Cloud · DevOps",
+  rotating: ["System Architect", "AI Builder", "Innovator", "Engineer", "Tech Enthusiast", "Photographer", "Nature Lover"],
 
   about: [
+    "I love building things.",
+    "I'm a system architect with 18+ years across embedded, IoT, cloud and AI. I work at the intersection of AI, Embedded, Cloud, IoT and Cybersecurity.",
+    "I bring deep expertise in Agentic AI, LLM fine-tuning, Edge Intelligence, Cloud platforms and IoT ecosystems, with a proven track record of architecting scalable, secure, high-performance systems across industrial and enterprise domains. My work bridges the gap between AI research and real-world deployment.",
     "I'm a Software Specialist from Pune, India, with rich experience in Windows, IoT and Cloud development. I'm passionate about technology, teaching machines how to think, and helping organizations in their Digital Transformation journey.",
     "Self-motivated and success-driven, I've spent my career in software architecture, development and technical leadership — connecting millions of industrial devices to the cloud, and mentoring the people who build them.",
   ],
 
   // Career, newest first. "version" is shown in the changelog view.
-  // TODO(linkedin): add any role after 2019 and confirm the latest end date
+  // TODO(linkedin): confirm the start date of the System Architect role
+  // and the end date of the Specialist role
   experience: [
+    {
+      version: "v5",
+      title: "System Architect — Data Science & AI",
+      org: "Eaton",
+      period: "Current",
+      tag: "ai",
+      notes: [
+        "Architecting AI-driven systems across Embedded, IoT, Cloud and Cybersecurity.",
+        "Agentic AI, LLM fine-tuning and Edge Intelligence — bridging AI research and real-world industrial deployment.",
+        "Scalable, secure, high-performance systems across industrial and enterprise domains.",
+      ],
+    },
     {
       version: "v4",
       title: "Specialist Software Engineer",
       org: "Eaton India Innovation Centre",
-      period: "2019 — Present",
+      period: "2019 →",
       tag: "innovation",
       notes: [
         "Enable digital innovation and transformation — helping the organization move products from ‘What Is’ to ‘What Could Be’.",
@@ -77,7 +96,7 @@ window.PROFILE = {
   ],
 
   education: [
-    { degree: "Master of Technology (M.Tech)", field: "Computer Science and Engineering", school: "National Institute of Technology, Bhopal", period: "2006 — 2008" },
+    { degree: "Master of Technology (M.Tech)", field: "Computer Science and Engineering", school: "Maulana Azad National Institute of Technology (MANIT / NIT), Bhopal", period: "2006 — 2008" },
     { degree: "Bachelor of Engineering (B.E.)", field: "Computer Science and Engineering", school: "University of Technology, Bhopal", period: "2002 — 2006" },
   ],
 
@@ -93,6 +112,17 @@ window.PROFILE = {
     { n: 1, label: "Trade secret" },
     { n: 8, label: "Invention disclosures" },
     { n: 2, label: "Publications" },
+  ],
+
+  // Core competencies & specialties (LinkedIn About)
+  competencies: [
+    ["AI & Data Science", ["Agentic AI", "LLM fine-tuning", "MLOps", "Azure Machine Learning", "AWS SageMaker"]],
+    ["Edge & IoT", ["Edge AI", "Digital Twins", "Industry 4.0", "Embedded Intelligence", "OTA updates"]],
+    ["Architecture & Design", ["Microservices", "Event-driven systems", "Design patterns (MVVM, MVC)", "Distributed systems"]],
+    ["Cloud & DevOps", ["Microsoft Azure", "Azure DevOps", "Git", "Jenkins", "Atlassian toolset"]],
+    ["Data Engineering", ["Apache Flink", "Kafka", "Azure Data Factory", "CosmosDB", "ADX", "Hadoop"]],
+    ["Programming", ["Python", "C#", "Java", ".NET", "REST APIs", "Node.js"]],
+    ["System Integration", ["Message queuing", "Distributed logging", "Real-time stream processing"]],
   ],
 
   // Signal strength 0–100 → rendered as signal bars + gauge
@@ -122,12 +152,17 @@ window.PROFILE = {
   },
 
   nowExploring: [
+    "Agentic AI",
+    "LLM fine-tuning",
+    "Edge Intelligence",
     "Data Science and AI",
     "Microsoft Azure",
     "Embedded IoT controllers (ESP8266 / ESP32)",
     "IoT and Cloud platforms",
   ],
+  volunteer: "Science and Technology",
   collaborate: [
+    "AI in industrial & embedded systems",
     "Digitalization and Digital Transformation",
     "IoT platform projects",
     "Enterprise cloud integration",

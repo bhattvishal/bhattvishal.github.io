@@ -79,6 +79,7 @@ a { color: inherit; }
 .eyebrow { font-size: 13px; color: var(--muted); letter-spacing: .3px; margin: 0 0 18px; }
 .hero-name { font-size: clamp(56px, 10vw, 132px); line-height: .9; letter-spacing: -0.04em; margin: 0 0 22px; font-weight: 700; }
 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--text); }
+.hero-tagline { font-size: clamp(22px, 2.6vw, 30px); font-weight: 600; letter-spacing: -0.02em; margin: 0 0 6px; }
 .hero-rotator { font-size: clamp(18px, 2.2vw, 24px); color: var(--accent); margin: 0 0 14px; min-height: 1.5em; }
 .caret { animation: blink 1s steps(1) infinite; margin-left: 2px; }
 @keyframes blink { 50% { opacity: 0; } }
@@ -144,6 +145,17 @@ main { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 64px); }
 .rel-notes { list-style: none; margin: 0; padding: 0; }
 .rel-notes li { position: relative; padding-left: 26px; margin: 6px 0; color: color-mix(in srgb, var(--text) 88%, var(--muted)); font-size: 16px; }
 .rel-notes li::before { content: "+"; position: absolute; left: 4px; font-family: var(--mono); color: var(--accent); font-weight: 700; }
+
+/* avatar + competencies */
+.avatar { float: left; width: 132px; height: 132px; border-radius: 50%; object-fit: cover; margin: 6px 24px 12px 0; border: 2px solid var(--accent); box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 15%, transparent); }
+.about-text p:first-child { font-size: clamp(28px, 3.4vw, 40px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; }
+.stack-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 40px; }
+.stack-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; transition: border-color .25s; }
+.stack-card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); }
+.stack-card h3 { margin: 2px 0 12px; font-size: 19px; }
+.stack-n { font-size: 12px; color: var(--accent); }
+.stack-card .chips li { font-size: 13px; padding: 4px 10px; }
+.sig-label { margin-bottom: 16px; }
 
 /* signal */
 .signal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
@@ -219,6 +231,7 @@ main { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 64px); }
   .topbar-tools { margin-left: auto; }
 }
 @media (max-width: 640px) {
+  .avatar { width: 96px; height: 96px; margin-right: 16px; }
   body { font-size: 16px; }
   .status-chip { display: none; }
   .two-col { grid-template-columns: 1fr; }

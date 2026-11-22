@@ -31,6 +31,12 @@
   $("#hero-last").textContent = parts.slice(1).join(" ");
   $("#loc").textContent = P.location;
   $("#headline").textContent = P.headline;
+  $("#tagline").textContent = P.tagline || "";
+  if (P.photo) $("#avatar").src = P.photo; else $("#avatar").remove();
+  $("#volunteer").innerHTML = P.volunteer ? "<li>" + esc(P.volunteer) + "</li>" : "";
+  $("#competencies").innerHTML = (P.competencies || []).map(function (c, i) {
+    return '<div class="stack-card reveal"><span class="mono stack-n">0' + (i + 1) + "</span><h3>" + esc(c[0]) + '</h3><ul class="chips">' + c[1].map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div>";
+  }).join("");
   $("#cta-resume").href = P.resume;
   $("#year").textContent = new Date().getFullYear();
   var patents = P.innovation.filter(function (i) { return /patent/i.test(i.label); })[0];
@@ -261,10 +267,10 @@
     var u = function () { var x = uptime(); return x.y + " years, " + x.m + " months, " + x.d + " days"; };
     var cmds = {
       help: function () { return '<span class="c">available commands</span>\n  whoami      who is this?\n  experience  career changelog\n  skills      signal strength report\n  stack       what I build with\n  innovation  patents & disclosures\n  contact     ways to reach me\n  resume      open my résumé\n  uptime      how long I\'ve been shipping\n  ping        test connectivity\n  cook        fun fact\n  theme       toggle light / dark\n  clear       clear screen\n  exit        close terminal'; },
-      whoami: function () { return '<span class="a">' + esc(P.name) + "</span> — " + esc(P.headline) + "\n" + esc(P.about[0]); },
+      whoami: function () { return '<span class="a">' + esc(P.name) + "</span> — " + esc(P.headline) + "\n" + esc(P.about.slice(0, 2).join(" ")); },
       experience: function () { return P.experience.map(function (e) { return '<span class="c">' + e.version + '</span>  ' + esc(e.title) + ' <span class="m">@ ' + esc(e.org) + " · " + esc(e.period) + "</span>"; }).join("\n"); },
       skills: function () { return Object.keys(P.skills).map(function (g) { return '<span class="a">' + esc(g) + "</span>\n" + P.skills[g].map(function (s) { var n = Math.round(s[1] / 25); return "  " + "▮".repeat(n) + "▯".repeat(4 - n) + "  " + esc(s[0]); }).join("\n"); }).join("\n"); },
-      stack: function () { return "C# · .NET · Azure IoT Hub · IoT Edge · Web Apps & APIs · Microservices\nC/C++ · ESP8266/ESP32 · CAN · MODBUS · PROFINET · WPF/WCF\nGit · TFS · Azure DevOps · Atlassian · Scaled Agile"; },
+      stack: function () { return (P.competencies || []).map(function (c) { return '<span class="a">' + esc(c[0]).padEnd(22) + "</span>" + esc(c[1].join(" · ")); }).join("\n") + "\n" + '<span class="a">' + "Legacy & devices".padEnd(22) + "</span>C/C++ · ESP8266/ESP32 · CAN · MODBUS · PROFINET · WPF/WCF"; },
       innovation: function () { return P.innovation.map(function (i) { return '  <span class="c">' + i.n + "</span> " + esc(i.label); }).join("\n"); },
       contact: function () { return P.links.map(function (l) { return "  " + esc(l.label).padEnd(15) + '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.url) + "</a>"; }).join("\n"); },
       resume: function () { window.open(P.resume, "_blank", "noopener"); return "opening résumé…"; },
